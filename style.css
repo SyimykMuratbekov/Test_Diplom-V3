@@ -1,0 +1,186 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Gray background color */
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  background-image: url("/img/Shapkafons.PNG"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+a,
+a:focus{
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+header img {
+  max-width: 120px; /* Adjust the maximum width to make the image larger */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 1mm;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+section {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+/* Обший контейнер */
+.rap{
+  background-color: #4b5044;
+}
+.container{
+  max-width: 1260px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  
+}
+.movie-actions a{
+  padding: 8px 20px;
+  border-radius: 3px;
+  background: purple;
+  color: white;
+  transition: all .2s ease;
+}
+.movie-actions a:hover{
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, .2);
+}
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.movie {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+  width: 100%;
+}
+.movie-poster {
+  position: relative;
+  width: calc(100% / 8 * 1.6);
+  padding-top: calc(100% * (85 / 320));
+  border-radius: 5px;
+  overflow: hidden;
+}
+.movie-content{
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+.movie-info{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.movie-title{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+}
+.movie-items{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.item{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.item span{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.item span small{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.movie-poster img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Слайдер */
+.wrap{
+  background-color: #4b5044;
+}
+.wrap {
+  overflow: hidden;
+  margin: 0 auto;
+  border: 1px solid rgba(235, 6, 6, 0); 
+}
+.slider-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide {
+  display: none;
+  width: 335px;
+  height: 500px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* анимацию перехода между слайдами */
+.slide {
+  animation: fade 1.5s ease-in-out infinite;
+}
+
+@keyframes fade {
+  from {
+      opacity: 0.4;
+  }
+  to {
+      opacity: 1;
+  }
+}
+/* Конец слайдера*/
